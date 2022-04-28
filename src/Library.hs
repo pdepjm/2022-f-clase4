@@ -109,3 +109,13 @@ mitad = (/2)
 anioActual = 2022
 --hervir tomate = olla "agua" tomate
 
+-- h(x) = fog(x)
+esImpar = not . even
+
+cantidadParDeLetras = even . length
+
+estaCocido = (=="cocido") . head . caracteristicas
+
+tomatesCrudos tomates = filter (not.estaCocido) tomates
+
+laCantidadTotalDeLetrasDeLAsCaracteristicasDeUnTomate = sum . map length . caracteristicas
